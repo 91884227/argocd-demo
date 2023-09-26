@@ -3,7 +3,7 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: httpd-route-helm
 spec:
-  host: {{ .Values.helm-test.argocd.httpd }}
+  host: {{ .Values.hostname }}
   to:
     kind: Service
     name: httpd-service
