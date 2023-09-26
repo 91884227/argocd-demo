@@ -1,0 +1,2 @@
+hostname: helm-test.argocd.httpd
+image: registry.redhat.io/rhscl/httpd-24-rhel7

@@ -1,0 +1,13 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: httpd-route-helm
+spec:
+  host: {{ .Values.helm-test.argocd.httpd }}
+  to:
+    kind: Service
+    name: httpd-service
+    weight: 100
+  port:
+    targetPort: 8080
+  wildcardPolicy: None
