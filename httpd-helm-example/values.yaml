@@ -1,2 +1,3 @@
 hostname: chuck.helm-httpd.route
 image: registry.redhat.io/rhscl/httpd-24-rhel7
+namespace: argocd-demo-helm

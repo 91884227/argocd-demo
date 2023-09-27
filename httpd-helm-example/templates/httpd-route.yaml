@@ -2,6 +2,7 @@ kind: Route
 apiVersion: route.openshift.io/v1
 metadata:
   name: httpd-route-helm
+  namespace: {{ .Values.namespace }}
 spec:
   host: {{ .Values.hostname }}
   to:
