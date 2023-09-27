@@ -1,2 +1,2 @@
-hostname: www.chuck.helm-httpd.route
+hostname: chuck.helm-httpd.route
 image: registry.redhat.io/rhscl/httpd-24-rhel7
