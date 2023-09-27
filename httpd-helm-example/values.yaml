@@ -1,2 +1,2 @@
-hostname: helm-test.argocd.httpd
+hostname: www.chuck.helm-httpd.route
 image: registry.redhat.io/rhscl/httpd-24-rhel7
