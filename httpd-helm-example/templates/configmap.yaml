@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-test
+data:
+  allowed: (lookup "v1" "Namespace" "" "")
+  enemies: aliens
+  lives: "3"
