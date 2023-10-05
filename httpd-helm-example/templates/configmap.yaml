@@ -3,6 +3,6 @@ kind: ConfigMap
 metadata:
   name: configmap-test
 data:
-  allowed: {{ keys (lookup "v1" "Namespace" "" "") | first }}
+  allowed: whatitthis
   enemies: aliens
   lives: "3"
