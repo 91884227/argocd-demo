@@ -6,7 +6,7 @@ spec:
   hosts:
   - "*"
   gateways:
-  - bookinfo-gateway
+  - bookinfo-gateway # 若要開到cluster外 則需要gateway
   http:
   - match:
     - uri:
@@ -21,6 +21,6 @@ spec:
         prefix: /api/v1/products
     route:
     - destination:
-        host: productpage # Virtual Service Name
+        host: productpage # k8s-service name
         port:
           number: 9080

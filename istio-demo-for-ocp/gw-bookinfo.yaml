@@ -8,7 +8,7 @@ spec:
   servers:
   - port:
       number: 80
-      name: http
+      name: http # 會對應到service的port
       protocol: HTTP
     hosts:
     - "*"
