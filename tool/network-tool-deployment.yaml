@@ -1,0 +1,21 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: network-check
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: network
+  template:
+    metadata:
+      labels:
+        app: network
+      annotations:
+        sidecar.istio.io/inject: 'true'  
+    spec:
+      containers:
+        - name: network-check
+          image: registry.redhat.io/openshift4/network-tools-rhel8:v4.11.0-202309181625.p0.g4e87286.assembly.stream
+          command: ["/bin/sh"]
+          args: ["sleep infinity"]
