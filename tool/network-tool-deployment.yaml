@@ -18,4 +18,4 @@ spec:
         - name: network-check
           image: registry.redhat.io/openshift4/network-tools-rhel8:v4.11.0-202309181625.p0.g4e87286.assembly.stream
           command: ["/bin/sh"]
-          args: ["sleep infinity"]
+          args: ["-c", "while true; do echo hello; sleep 10;done"]
